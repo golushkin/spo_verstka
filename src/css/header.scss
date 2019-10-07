@@ -6,33 +6,75 @@ $header-color: #fff;
   }
 
 
+
+.btb{
+    font-family: 'BtB';
+}
+
+
+.btn{
+    background-color: #ff3150;
+    padding: 13px 41px;
+    border-radius: 24px;
+    color: $header-color;
+    cursor: pointer;
+}
+
 header{
     background: url('./image/bg-header.png');
     background-size: cover;
+    font-family: 'Roboto', sans-serif;
     & .h-content{
         color: $header-color;
-        margin: 0 20%; 
+        margin: 0 20%;
+        padding: 1% 0;
         & .nav-bar{
             display: flex;
             justify-content: space-between;
+            align-items: center;
             & .logo a{
                 color: $header-color;
+                font-size: 2rem;
+                position: relative;
+                &::before{
+                    content: "Template";
+                    color:red;
+                    position: absolute;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 0.7rem;
+                    bottom: 1px;
+                    right: 0;
+                }
             }
             & .links{
-                flex-basis: 10%;
-
+                flex-basis: 52%;
                 & ul{
                     width: 100%;
                     display: flex;
                     justify-content: space-between;
+                    & .login{
+                        padding: 7px 41px;
+                    }
                 }
             }
         }
         & .title-block{
-            padding: 20% 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30% 0;
             & .title{
-                font-family: 'BtB';
+                font-size: 5.5rem;
             }
+            & p:nth-child(2){
+                color: #a8b9c0;
+                font-size: 1.65rem;
+                margin-top: 0.5%;
+            }
+            & p:last-child{
+                margin-top: 7.5%;
+            }
+            
         }
     }
 }
