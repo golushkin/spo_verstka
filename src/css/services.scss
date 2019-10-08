@@ -1,0 +1,46 @@
+@import './colors.scss';
+
+.services{
+    background-color: #f4f4f4;
+    padding: 7.55% 0;
+
+    & .content{
+        margin: 0 20%;
+        display: flex;
+        justify-content: space-between;
+
+        & .block{
+            background-color: #fff;
+            flex-basis: 32%;
+            padding: 6% 5%;
+            box-sizing: border-box;
+            
+            & .icon{
+                font-size: 3rem;
+                text-align: center;
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    bottom: -10px;
+                    left: 44%;
+                    width: 12%;
+                    height: 2px;
+                    background-color: $red;
+                }
+            }
+            & .title{
+                margin: 12% 0;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+            }
+            & .desc{
+                line-height: 25px;
+                color: #637988;
+                text-align: center;
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
