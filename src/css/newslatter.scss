@@ -24,6 +24,9 @@
                 border-bottom: 1px solid #fff;
                 padding: 4px;
                 width: 99%;
+                &::placeholder{
+                    color: #fff;
+                }
             }
         }
         & .btn{
