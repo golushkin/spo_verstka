@@ -1,0 +1,109 @@
+@import './colors.scss';
+
+$size: .8rem;
+
+footer{
+    background-color: $dark-blue;
+    & .content{
+        margin: 0 20%;
+        padding: 3% 0;
+        display: flex;
+        color: $text;
+        justify-content: space-between;
+        align-items: flex-start;
+        & .footer-title{
+            color: $white;
+            font-size: 0.9rem;
+        }
+        & ul{
+            margin-top: 23px;
+            & li{
+                font-size: $size;
+                margin-top: 20px;
+            }
+        }
+        & .simple-data{
+            flex-basis: 33%;
+            & .footer-logo a{
+                color: $header-color;
+                font-size: 2rem;
+                position: relative;
+                &::before{
+                    content: "Template";
+                    color:$red;
+                    position: absolute;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: $size;
+                    bottom: 1px;
+                    right: 0;
+                }
+            }
+            & p{
+                font-size: .8rem;
+                &:last-child{
+                    margin-top: 17%;
+                }
+            }
+
+            & .info{
+                margin-top: 4.2%;
+                line-height: 30px;
+            }
+        }
+        & .links, & .about-us{
+            flex-basis: 15%;
+        }
+        
+        & .contact-us{
+            flex-basis: 30%;
+            &>p{
+                font-size: $size;
+                line-height: 30px;
+                margin-top: 4%;
+            }
+            & .footer-mail{
+                margin-top: 11%;
+                position: relative;
+                font-size: $size;
+                &.btn{
+                    padding: 3% 5%;
+                }
+                &::before{
+                    content: '→';
+                    position: absolute;
+                    right: 3%;
+                    font-size: 2.5rem;
+                    top: -25%;
+                }
+            }
+        }
+        & .social{
+            display: flex;
+            margin-top: 14%;
+            & div{
+                border-radius: 50%;
+                color: #fff;
+                cursor: pointer;
+            }
+            & .facebook{
+                background-color: #347cd2;
+                padding: 2% 3.5%;
+            }
+            & .twitter{
+                background-color: #1ec4ff;
+                padding: 2% 2.5%;
+                margin-left: 3.2%;
+            }
+            & .google{
+                background-color: #ff4032;
+                padding: 2% 2.2%;
+                margin-left: 3.2%;
+            }
+            & .ball{
+                background-color: #ff3298;
+                padding: 2% 2.6%;
+                margin-left: 3.2%;
+            }
+        }
+    }
+}

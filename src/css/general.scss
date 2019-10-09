@@ -1,3 +1,5 @@
+@import './colors.scss';
+
 *{
     margin: 0;
     padding: 0;
@@ -25,9 +27,12 @@ a{
     font-family: 'BtB';
 }
 
+.clr{
+    color:$red;
+}
 
 .btn{
-    background-color: #ff3150;
+    background-color: $red;
     padding: 13px 41px;
     border-radius: 24px;
     color: #fff;
