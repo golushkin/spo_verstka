@@ -34,12 +34,33 @@
                 text-align: center;
                 text-transform: uppercase;
                 letter-spacing: 3px;
+                font-weight: normal;
             }
             & .desc{
                 line-height: 25px;
                 color: #637988;
                 text-align: center;
                 font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 901px){
+    .services{
+        & .content{
+            flex-direction: row;
+            
+        }
+    }
+}
+
+@media (max-width: 900px){
+    .services{
+        & .content{
+            flex-direction: column;
+            & .block{
+                margin-top: 1%;
             }
         }
     }

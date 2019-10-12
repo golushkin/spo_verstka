@@ -23,3 +23,18 @@
         }
     }
 }
+
+@media (min-width: 901px){
+    .clients-img{
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 900px){
+    .clients-img{
+        flex-direction: column;
+        & div{
+            margin-top: 5%;
+        }
+    }
+}

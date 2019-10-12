@@ -5,7 +5,7 @@
     & .content{
         margin: 0 20%;
         color: #fff;
-        padding: 5.6% 0 6.8%;
+        padding: 5.6% 0 5.8%;
         & .title{
             font-size: 2.1rem;
             text-align: center;
@@ -14,12 +14,22 @@
         & p{
             text-align: center;
             color: $text;
-            margin-top: 1%;
             font-size: 0.9rem;
         }
         & div:last-child{
-            text-align: center;
-            margin-top: 6%;
+            margin-top: 5%;
         }
+    }
+}
+
+@media (min-width:801px){
+    .adversite p{
+        margin-top: 1%;
+    }
+}
+
+@media (max-width:800px){
+    .adversite p{
+        margin: 9% 0;
     }
 }

@@ -52,6 +52,9 @@ footer{
         }
         & .links, & .about-us{
             flex-basis: 15%;
+            & a{
+                color:$text;
+            }
         }
         
         & .contact-us{
@@ -65,9 +68,6 @@ footer{
                 margin-top: 11%;
                 position: relative;
                 font-size: $size;
-                &.btn{
-                    padding: 3% 5%;
-                }
                 &::before{
                     content: '→';
                     position: absolute;
@@ -82,8 +82,9 @@ footer{
             margin-top: 14%;
             & div{
                 border-radius: 50%;
-                color: #fff;
-                cursor: pointer;
+                & a{
+                    color:#fff;
+                }
             }
             & .facebook{
                 background-color: #347cd2;
@@ -103,6 +104,44 @@ footer{
                 background-color: #ff3298;
                 padding: 2% 2.6%;
                 margin-left: 3.2%;
+            }
+        }
+    }
+}
+
+@media (min-width:881px){
+    footer{
+        .content{
+            & .contact-us{
+                & .btn{
+                    padding: 3% 5%;
+                    margin: 5% 0 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:880px){
+    footer{
+        .content{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            & .links{
+                display: none;
+            }
+            & .about-us{
+                display: none;
+            }
+            & .contact-us{
+                margin-top: 10%;
+                & .btn{
+                    margin: 5% auto;
+                }
+            }
+            & .social{
+                justify-content: center;
             }
         }
     }

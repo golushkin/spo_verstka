@@ -1,9 +1,6 @@
 @import './colors.scss';
 $header-color: #fff;
 
-.active-l{
-    color: $red;
-}
 
 header{
     background: url('./image/bg-header.png');
@@ -11,7 +8,7 @@ header{
     & .h-content{
         color: $header-color;
         margin: 0 20%;
-        padding: 1% 0;
+        padding: 1.2% 0 1%;
         & .nav-bar{
             display: flex;
             justify-content: space-between;
@@ -37,8 +34,27 @@ header{
                     width: 100%;
                     display: flex;
                     justify-content: space-between;
+                    & li{
+                        & a{
+                            color: #fff;
+                        }
+                        & a:hover{
+                            color: $red;
+                        }
+                    }
                     & .login{
                         padding: 7px 41px;
+                    }
+                }
+            }
+            & .mobile-links{
+                & .burger{
+                    & span{
+                        display: block;
+                        height: 3px;
+                        background-color: #fff;
+                        width: 27px;
+                        margin-top: 4px;
                     }
                 }
             }
@@ -47,19 +63,71 @@ header{
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 31.4% 0;
-            & .title{
-                font-size: 5.5rem;
-            }
+            text-align: center;
             & p:nth-child(2){
                 color: $text;
                 font-size: 1.65rem;
-                
             }
-            & p:last-child{
-                margin-top: 7.5%;
+        }
+    }
+}
+
+@media (min-width: 401px){
+    .mobile-links{
+        display: none;
+    }
+    .title-block{
+        padding: 30% 0 33%;  
+        & .title{
+            font-size: 5.5rem;
+        }
+        & p:last-child{
+            margin-top: 7.5%;
+        }
+    }
+}
+
+@media (min-width: 1101px){
+    .mobile-links{
+        display: none;
+    }
+}
+
+@media (max-width: 1600px){
+    header{
+        & .links{
+            & li{
+                padding: 0 10px;
             }
-            
+        }
+    }
+}
+
+@media (max-width: 1100px){
+    header{
+        & .title-block{
+            padding: 17.4% 0;
+        }
+        & .mobile-links{
+            display: block;
+        }
+        & .links{
+           display: none;
+        }
+    }
+}
+
+@media (max-width: 400px){
+    .title-block{
+        padding: 31.4% 0;  
+        & .title{
+            font-size: 3.5rem;
+        }
+        & p:nth-child(2){
+            display: none;            
+        }
+        & p:last-child{
+            margin-top: 19.5%;
         }
     }
 }
