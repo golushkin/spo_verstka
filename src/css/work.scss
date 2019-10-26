@@ -43,7 +43,7 @@
 @media (min-width: 1025px){
     .work{
         & .work-img{
-            grid-template-columns: repeat(4, 25%);
+            grid-template-columns: repeat(4, 1fr);
             grid-gap: .2em;
         }
     }
@@ -53,7 +53,7 @@
 @media (max-width: 1024px){
     .work{
         & .work-img{
-            grid-template-columns: repeat(2, 50%);
+            grid-template-columns: repeat(2, 1fr);
             grid-gap: .2em;
         }
     }
@@ -72,7 +72,7 @@
 @media (max-width: 500px){
     .work{
         & .work-img{
-            grid-template-columns: repeat(1, 100%);
+            grid-template-columns: repeat(1, 1fr);
             grid-gap: .2em;
         }
     }
